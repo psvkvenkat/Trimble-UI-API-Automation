@@ -1,0 +1,33 @@
+{
+    "name": "Trimble-UI-API-Automation",
+    "version": "0.2.7",
+    "description": "Model Context Protocol servers for Playwright",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "bin": {
+      "playwright-mcp-server": "dist/index.js"
+    },
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "build": "tsc && shx chmod +x dist/*.js",
+      "prepare": "npm run build",
+      "watch": "tsc --watch"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/psvkvenkat/Trimble-UI-API-Automation.git"
+    },
+    "dependencies": {
+      "@modelcontextprotocol/sdk": "1.4.1",
+      "playwright": "1.50.0",
+      "@playwright/browser-chromium": "1.50.0"
+    },
+    "keywords": ["playwright", "automation", "AI", "Claude MCP"],
+    "devDependencies": {
+      "@types/node": "^20.10.5",
+      "shx": "^0.3.4",
+      "typescript": "^5.6.2"
+    }
+  }
