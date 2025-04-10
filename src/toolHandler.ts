@@ -3,7 +3,7 @@ import { CallToolResult, TextContent, ImageContent } from "@modelcontextprotocol
 import { BROWSER_TOOLS, API_TOOLS } from "./tools.js";
 import fs from 'node:fs';
 import * as os from 'os';
-import * as path from 'path';
+import * as path from 'path'; 
 
 // Global state
 let browser: Browser | undefined;
